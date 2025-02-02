@@ -1,0 +1,398 @@
+:root {
+  --main-color: #16a085;
+  --light-color: #c7afe9;
+  --white: #f9f8f8;
+  --black: #000f08;
+  --border: 0.1rem solid var(--light-color);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*::selection {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  overflow-x: hidden;
+}
+
+/* Header, nav, links etc. */
+header {
+  position: fixed;
+  padding: 2rem 9%;
+  width: 100%;
+  top: 0;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav li,
+nav a {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--main-color);
+}
+
+button,
+.contact-btn {
+  padding: 0.9rem 2.5rem;
+  background-color: var(--main-color);
+  border-radius: 5rem;
+  color: var(--white);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-color);
+}
+
+/* Main */
+main {
+  margin-top: 10%;
+  padding: 2rem 9%;
+}
+
+/* Hero Section */
+.Hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.Hero-sect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero-sect .Welcome-text {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+
+.Hero-sect h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.Hero-sect p {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+
+.Hero-sect img {
+  flex: 1 1 40rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+#intro-video {
+  width: 100%;
+  max-width: 56rem;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+/* Featured Artists */
+.featured-sect {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.featured-sect h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+}
+
+.featured-sect div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.artist-card {
+  flex: 1 1 30rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.artist-card figcaption {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin: 1.5rem 0;
+}
+
+.artist-card a {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  transition: all 0.3s ease;
+}
+
+.artist-card a:hover {
+  color: var(--main-color);
+}
+
+/* News and Updates */
+.news-sect {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.news-sect h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+}
+
+.news-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.news-articles article {
+  flex: 1 1 30rem;
+  max-width: 30rem;
+  text-align: left;
+}
+
+.news-articles img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.news-articles h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-top: 1.5rem;
+}
+
+.news-articles p {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+/* About Page */
+.About {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.About h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.About p {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+}
+
+.Location {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.Location iframe {
+  width: 100%;
+  max-width: 60rem;
+  height: 45rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 9%;
+  background-color: var(--main-color);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+footer h4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+footer form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+footer button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 5%;
+  }
+
+  .Hero-sect h1 {
+    font-size: 3rem;
+  }
+
+  .Hero-sect p {
+    font-size: 1.2rem;
+  }
+
+  .featured-sect h2,
+  .news-sect h2,
+  .About h2 {
+    font-size: 2.5rem;
+  }
+
+  .artist-card,
+  .news-articles article {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Hero-sect h1 {
+    font-size: 2.5rem;
+  }
+
+  .Hero-sect p {
+    font-size: 1rem;
+  }
+
+  .featured-sect h2,
+  .news-sect h2,
+  .About h2 {
+    font-size: 2rem;
+  }
+
+  footer form {
+    flex-direction: column;
+  }
+}
